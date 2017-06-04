@@ -1,4 +1,6 @@
 # Tabswitcher
+![TabSwitcher](tabswitcher.png)
+
 
 ## Package development from
 [react-chrome-redux-examples](https://github.com/tshaddix/react-chrome-redux-examples)

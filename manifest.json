@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "RCR",
+    "description": "React, Chrome, and Redux example",
+    "version": "0.0.0.1",
+    "background": {
+        "scripts": [
+            "event.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_title": "RCR Example",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "background",
+        "tabs", "contextMenus", "storage", "notifications",
+        "http://*/*",
+        "https://*/*",
+        "http://172.16.10.142/*",
+        "http://172.16.10.142:8080/*",
+        "<all_urls>"
+    ],
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "css": ["content.css"],
+        "js": ["content.js"]
+    }]
+}

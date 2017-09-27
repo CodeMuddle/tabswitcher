@@ -54,7 +54,7 @@ class App extends Component {
 			tab: tab
 		});
 		this.show = false;
-		this.forceUpdate()
+		this.forceUpdate();
 	}
 
 	submit(e) {
